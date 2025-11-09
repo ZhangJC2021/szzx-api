@@ -20,10 +20,11 @@ def get_json(file):
         if file in ("page0", "page1", "page2"):
             return my_open(f"{file}.json")
         else:
-            raise Exception("404 Not Found")
+            return "404 Not Found"
     except Exception as e:
         raise
     
 
 if __name__ == '__main__':
     app.run(port=80)
+
