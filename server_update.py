@@ -29,8 +29,9 @@ def check_first_run():
 
 def main():
 
-    if check_first_run():
-        update_data()
+    # if check_first_run():
+    #     update_data()
+    update_data()
     
     schedule.every().day.at("02:00").do(update_data)
 
@@ -42,3 +43,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
