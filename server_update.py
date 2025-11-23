@@ -10,7 +10,7 @@ def update_data():
     from datetime import datetime
     from requests_json import get_analyze_json
 
-    print(f"{datetime.now()}:Start update")
+    print(f"{datetime.now()} start updating data...")
     for i in range(3):
         with open(f"page{i}.json", "w") as fp:
             fp.write(get_analyze_json("https://www.szzx1000.cn",
@@ -43,4 +43,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
